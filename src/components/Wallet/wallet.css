@@ -1,0 +1,272 @@
+.wallet-section {
+  margin-top: 250px;
+  background: url('../../assets/imgs/header.bg.svg');
+  width: 100%;
+  min-height: 680px;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.phone1,
+.phone2 {
+  width: 360px;
+}
+
+.wallet-container {
+  width: 1250px;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone2 {
+  position: relative;
+  left: 250px;
+  bottom: 88px;
+}
+
+.phone1 {
+  position: absolute;
+  z-index: -1;
+}
+
+.wallet-pics img {
+  border-radius: 25px;
+}
+
+.wallet-content {
+  width: 30%;
+}
+
+.wallet-title {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.wallet-description {
+  margin: 20px 0;
+  color: #5e6d7c;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.wallet-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.install-now__btn {
+  display: block;
+  position: relative;
+  background: #9447b7 !important;
+  font-size: 16px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  border-radius: 50px;
+  padding: 16px 40px;
+  font-weight: 700;
+  border: 1px solid #f3e4f8;
+  will-change: color, border-color;
+  color: white !important;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.install-now__btn {
+  background: #fff;
+  color: #0c3ee3;
+  border-color: #fff;
+}
+.install-now__btn {
+  background: 0 0;
+}
+.install-now__btn::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: 0 0;
+  border: 1px solid #0b2c9a;
+  opacity: 0;
+  z-index: 0;
+  will-change: transform;
+  transition: all 0.4s;
+  transform: scaleX(1.1) scaleY(1.3);
+  box-sizing: border-box;
+  pointer-events: none;
+}
+.install-now__btn:hover {
+  color: #fff;
+  background: #0b2c9a !important;
+  border: 1px solid #0b2c9a !important;
+
+  cursor: pointer;
+}
+.install-now__btn:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.learn-more__btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.learn-more__btn {
+  position: relative;
+  background: white;
+  font-size: 16px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  padding: 16px 40px;
+  font-weight: 700;
+  border: 1px solid #f3e4f8;
+  will-change: color, border-color;
+  color: #0c3ee3;
+  transition: all 0.25s;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.learn-more__btn.light {
+  background: #fff;
+  color: #0c3ee3;
+  border-color: #fff;
+}
+
+.learn-more__btn.transparent {
+  background: 0 0;
+}
+
+.learn-more__btn::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: 0 0;
+  border: 1px solid #0b2c9a;
+  opacity: 0;
+  z-index: 0;
+  will-change: transform;
+  transition: all 0.4s;
+  transform: scaleX(1.1) scaleY(1.3);
+  box-sizing: border-box;
+  pointer-events: none;
+}
+.learn-more__btn:hover {
+  color: #fff;
+  background: #0b2c9a;
+  border: 1px solid #0b2c9a;
+
+  cursor: pointer;
+}
+
+.learn-more__btn:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media screen and (max-width: 1200px) {
+  .wallet-container {
+    display: block;
+  }
+
+  .wallet-pics {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .phone1,
+  .phone2 {
+    position: unset;
+  }
+
+  .wallet-content {
+    width: 80%;
+    margin: 60px auto 0;
+    text-align: center;
+  }
+
+  .wallet-btns {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .phone2 {
+    width: 250px;
+  }
+  .phone1 {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .wallet-pics {
+    display: block;
+    padding-left: 50px;
+  }
+  .phone2 {
+    position: relative;
+    left: 158px;
+    top: -62px;
+  }
+
+  .phone1 {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .wallet-title {
+    font-size: 28px;
+  }
+
+  .wallet-description {
+    font-size: 16px;
+  }
+
+  .install-now__btn,
+  .learn-more__btn {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wallet-pics {
+    padding-left: 30px;
+  }
+
+  .wallet-btns {
+    flex-direction: column;
+  }
+
+  .learn-more__btn {
+    margin: 15px auto 0;
+  }
+
+  .wallet-section {
+    margin-top: 150px;
+  }
+  .phone2 {
+    width: 150px;
+    left: 92px;
+  }
+  .phone1 {
+    width: 150px;
+  }
+}

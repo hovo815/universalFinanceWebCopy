@@ -1,0 +1,15 @@
+.copyright-container {
+  width: 1250px;
+  max-width: 80%;
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-top: 1px solid #d7d9e1;
+}
+
+@media screen and (max-width: 480px) {
+  .copyright-container {
+    display: block;
+  }
+}

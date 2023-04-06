@@ -1,0 +1,29 @@
+.store-container {
+  width: 1250px;
+  max-width: 80%;
+  margin: auto;
+}
+
+.store-main__title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin: 120px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .store-list__container {
+    display: block;
+  }
+
+  .store-main__title {
+    margin: 220px 0 20px;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .store-main__title {
+    margin: 0px;
+    font-size: 38px;
+  }
+}

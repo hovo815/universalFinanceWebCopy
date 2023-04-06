@@ -1,0 +1,4 @@
+.store-list__container {
+  display: flex;
+  justify-content: space-between;
+}

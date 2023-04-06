@@ -1,0 +1,95 @@
+.investors-container {
+  width: 1250px;
+  max-width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.investor-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: 0 0;
+  border: 0;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px transparent;
+}
+.investor-box{
+  text-decoration: none;
+    color: #074494;
+    font-weight: bolder;
+    font-style: initial;
+}
+.investor-box img{
+
+    width: 150px;
+  
+}
+
+.investor-item::after,
+.investor-item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  width: 0;
+  height: 0;
+}
+.investor-item::after {
+  top: 0;
+  left: 0;
+  transition: border-color 0s ease-in 0.4s, width 0.1s ease-in 0.3s,
+    height 0.1s ease-in 0.2s;
+}
+.investor-item::before {
+  bottom: 0;
+  right: 0;
+  transition: border-color 0s ease-in 0.2s, width 0.1s ease-in 0.1s,
+    height 0.1s ease-in;
+}
+.investor-item:hover::after,
+.investor-item:hover::before {
+  width: 100%;
+  height: 100%;
+}
+.investor-item:hover::after {
+  border-top-color: #ccc;
+  border-right-color: #ccc;
+  transition: width 0.1s ease-out, height 0.1s ease-out 0.1s;
+}
+.investor-item::before {
+  border-bottom-color: #ccc;
+  border-left-color: #ccc;
+  transition: border-color 0s ease-out 0.2s, width 0.1s ease-out 0.2s,
+    height 0.1s ease-out 0.3s;
+}
+
+@media screen and (max-width: 1200px) {
+  .investors-container {
+    grid-template-columns: auto auto auto;
+    margin-top: 100px;
+  }
+
+  .investor-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .investors-container {
+    grid-template-columns: auto auto;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .investors-container {
+    grid-template-columns: auto;
+    margin-top: 100px;
+  }
+}
